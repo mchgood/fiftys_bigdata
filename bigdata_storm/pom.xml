@@ -11,6 +11,17 @@
 
     <artifactId>bigdata_storm</artifactId>
     <packaging>pom</packaging>
+    <modules>
+        <module>storm_example</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.storm</groupId>
+            <artifactId>storm-core</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+    </dependencies>
 
 
 </project>
