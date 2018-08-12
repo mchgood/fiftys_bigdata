@@ -94,3 +94,20 @@ hs_err_pid*
 
 .idea/
 fiftys_bigdata.iml
+bigdata_hadoop/hadoop_hdfs/src/main/resources/
+bigdata_hadoop/hadoop_hdfs/src/test/
+bigdata_hadoop/hadoop_hdfs/target/
+bigdata_hadoop/hadoop_mapreduce/src/test/
+bigdata_hadoop/hadoop_mapreduce/target/classes/log4j.properties
+bigdata_hadoop/hadoop_mapreduce/target/generated-sources/
+bigdata_hadoop/hadoop_weblog/src/test/
+bigdata_hadoop/hadoop_weblog/target/
+bigdata_hadoop/src/
+bigdata_kafka/kafka_example/src/main/resources/
+bigdata_kafka/kafka_example/src/test/
+bigdata_kafka/kafka_example/target/
+bigdata_kafka/src/
+bigdata_storm/src/
+bigdata_storm/storm_example/src/main/resources/
+bigdata_storm/storm_example/src/test/
+bigdata_storm/storm_example/target/
