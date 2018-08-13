@@ -6,6 +6,9 @@ object ScalaExample {
 
     println("hello word")
 
+    val i = 10
+    println(i)
+
   }
 
 }

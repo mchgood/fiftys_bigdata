@@ -113,4 +113,7 @@ bigdata_storm/storm_example/src/test/
 bigdata_storm/storm_example/target/
 bigdata_scala/scala_example/target/generated-sources/
 bigdata_scala/src/
-bigdata_storm/strom_wordcount_web/src/
+bigdata_storm/strom_wordcount_web/target/
+bigdata_storm/strom_wordcount_web/src/main/resources/fiftys-wordcount-servlet.xml
+bigdata_storm/strom_wordcount_web/src/main/resources/log4j.properties
+bigdata_storm/strom_wordcount_web/src/main/webapp/WEB-INF/web.xml
