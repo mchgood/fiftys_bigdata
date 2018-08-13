@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>storm_example</module>
+        <module>strom_wordcount_web</module>
     </modules>
 
     <dependencies>
