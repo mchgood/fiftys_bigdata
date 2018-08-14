@@ -5,7 +5,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="jedisConnectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory"
-          p:use-pool="true" p:hostName="node01" p:port="6379"/>
+          p:use-pool="true" p:hostName="node1" p:port="6379"/>
 
     <bean id="stringRedisTemplate" class="org.springframework.data.redis.core.StringRedisTemplate"
           p:connection-factory-ref="jedisConnectionFactory"/>

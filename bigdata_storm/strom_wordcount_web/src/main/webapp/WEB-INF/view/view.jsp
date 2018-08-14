@@ -8,6 +8,10 @@
 <body>
 <div id="main" style="height: 100%"></div>
 <script type="text/javascript">
+
+    setTimeout(function () {
+        location.reload()
+    }, 1000);
     // 基于准备好的dom，初始化echarts实例
     var myChart = echarts.init(document.getElementById('main'));
 
@@ -16,15 +20,15 @@
         title: {
             text: 'Word Count'
         },
-        tooltip : {//鼠标悬浮弹窗提示
-            trigger : 'item',
-            show:true,
+        tooltip: {//鼠标悬浮弹窗提示
+            trigger: 'item',
+            show: true,
             showDelay: 5,
             hideDelay: 2,
-            transitionDuration:0,
-            formatter: function (params,ticket,callback) {
+            transitionDuration: 0,
+            formatter: function (params, ticket, callback) {
                 // console.log(params);
-                var res = "次数："+params.value;
+                var res = "次数：" + params.value;
                 return res;
             }
         },
@@ -78,7 +82,7 @@
             series: [{
                 name: '数量',
                 data: counts
-            },{
+            }, {
                 name: '折线',
                 data: counts2
             }]

@@ -31,7 +31,6 @@ public class KafkaConsumer {
         // 设置序反列化消息 value 的类
         config.setProperty(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
 
-
         org.apache.kafka.clients.consumer.KafkaConsumer<String, String> kafkaConsumer = new org.apache.kafka.clients.consumer.KafkaConsumer<String, String>(config);
         // 订阅topic
         kafkaConsumer.subscribe(Arrays.asList("my-kafka-topic"));
