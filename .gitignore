@@ -117,4 +117,4 @@ bigdata_storm/src/
 bigdata_storm/storm_example/src/main/resources/
 bigdata_storm/storm_example/src/test/
 bigdata_storm/storm_example/target/generated-sources/
-logs/
+bigdata_storm/storm_integration/src/test/
