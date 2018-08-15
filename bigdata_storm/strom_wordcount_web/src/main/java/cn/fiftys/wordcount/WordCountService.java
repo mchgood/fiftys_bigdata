@@ -17,7 +17,7 @@ public class WordCountService {
 
     public Map<String, String> queryData() {
         Set<String> keys = this.redisTemplate.keys("wordCount:*");
-        Map<String, String> result = new HashMap<>();
+        Map<String, String> result = new HashMap<String, String>();
         for (String key : keys) {
             result.put(key.substring(key.indexOf(':') + 1), this.redisTemplate.opsForValue().get(key).toString());
         }

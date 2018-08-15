@@ -18,8 +18,8 @@ public class WordCountRedisTopology {
 
         //设置bolt
         topologyBuilder.setBolt("SplitSentenceBolt", new SplitSentenceBolt(),4).localOrShuffleGrouping("RandomSentenceSpout").setNumTasks(4);
-        topologyBuilder.setBolt("WordCountBolt", new WordCountBolt(),2).partialKeyGrouping("SplitSentenceBolt",new Fields("count"));
-        topologyBuilder.setBolt("RedisBolt", new RedisBolt()).localOrShuffleGrouping("wordCount");
+        topologyBuilder.setBolt("WordCountBolt", new WordCountBolt(),2).partialKeyGrouping("SplitSentenceBolt",new Fields("word"));
+        topologyBuilder.setBolt("RedisBolt", new RedisBolt()).localOrShuffleGrouping("WordCountBolt");
 
         //第三步,构建Topology对象
         StormTopology topology = topologyBuilder.createTopology();
@@ -28,6 +28,6 @@ public class WordCountRedisTopology {
         LocalCluster localCluster = new LocalCluster();
         Config config = new Config();
         config.setNumWorkers(2);
-        localCluster.submitTopology("WordCountTopology",config,topology);
+        localCluster.submitTopology("WordCountRedisTopology",config,topology);
     }
 }
