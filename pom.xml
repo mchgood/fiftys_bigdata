@@ -12,6 +12,7 @@
     <module>bigdata_kafka</module>
     <module>bigdata_storm</module>
     <module>bigdata_scala</module>
+    <module>bigdata_hbase</module>
   </modules>
   <packaging>pom</packaging>
 

@@ -3,22 +3,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>fiftys_bigdata</artifactId>
+        <artifactId>bigdata_storm</artifactId>
         <groupId>cn.fiftys</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>bigdata_storm</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>storm_example</module>
-        <module>storm_integration</module>
-        <module>storm_worddcount_web</module>
-        <module>storm_wordcount_web</module>
-    </modules>
-
-
+    <artifactId>storm_wordcount_web</artifactId>
+    <packaging>war</packaging>
 
 
 </project>
