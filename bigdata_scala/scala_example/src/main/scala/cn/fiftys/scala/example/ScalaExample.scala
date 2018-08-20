@@ -2,12 +2,12 @@ package cn.fiftys.scala.example
 
 object ScalaExample {
 
-  def main(args: Array[String]): Unit = {
+  def main(args: Array[String]) {
 
-    println("hello word")
+     println("hello word")
 
-    val i = 10
-    println(i)
+     val i = 10
+     println(i)
 
   }
 
