@@ -14,8 +14,6 @@
     <modules>
         <module>storm_example</module>
         <module>storm_integration</module>
-        <module>storm_worddcount_web</module>
-        <module>storm_wordcount_web</module>
     </modules>
 
 
