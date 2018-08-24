@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-  <groupId>cn.fiftys</groupId>
-  <artifactId>fiftys_bigdata</artifactId>
-  <version>1.0-SNAPSHOT</version>
-  <modules>
-    <module>bigdata_hadoop</module>
-    <module>bigdata_kafka</module>
-    <module>bigdata_storm</module>
-    <module>bigdata_scala</module>
-    <module>bigdata_hbase</module>
-  </modules>
-  <packaging>pom</packaging>
-
-
+    <groupId>cn.fiftys</groupId>
+    <artifactId>fiftys_bigdata</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>bigdata_hadoop</module>
+        <module>bigdata_kafka</module>
+        <module>bigdata_storm</module>
+        <module>bigdata_scala</module>
+        <module>bigdata_hbase</module>
+        <module>bigdata_spark</module>
+    </modules>
+    <packaging>pom</packaging>
 
 
 </project>
