@@ -27,14 +27,14 @@ public class WordCountLocal {
         JavaRDD<String> lines = sc.textFile("D:\\file1.txt");
 
         //读取文件,将一行单词拆分为多个单词
-       JavaRDD<String> words =  lines.flatMap(new FlatMapFunction<String, String>() {
+        JavaRDD<String> words = lines.flatMap(new FlatMapFunction<String, String>() {
             public Iterator<String> call(String line) throws Exception {
                 String[] words = line.trim().split(" ");
-                return  Arrays.asList(words).iterator();
+                return Arrays.asList(words).iterator();
             }
         });
 
-       //每个单词记为1
+        //每个单词记为1
         JavaPairRDD<String, Integer> wordAndOne = words.mapToPair(new PairFunction<String, String, Integer>() {
             public Tuple2<String, Integer> call(String word) throws Exception {
                 return new Tuple2<String, Integer>(word, 1);
