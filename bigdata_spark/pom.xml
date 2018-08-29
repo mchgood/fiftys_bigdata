@@ -16,6 +16,7 @@
         <module>spark_example</module>
         <module>spark_weblog</module>
         <module>spark_sparksql</module>
+        <module>spark_sparkstreaming</module>
     </modules>
 
 

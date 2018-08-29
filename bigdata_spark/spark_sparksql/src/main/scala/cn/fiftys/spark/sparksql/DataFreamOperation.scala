@@ -1,14 +1,19 @@
 package cn.fiftys.spark.sparksql
 
+import org.apache.spark.SparkContext
 import org.apache.spark.sql.{DataFrame, SparkSession}
 
 object DataFreamOperation {
   def main(args: Array[String]): Unit = {
-    val sqlContext = SparkSession.builder
+    val session = SparkSession.builder
       .appName("DataFreamOperation")
       .master("local[2]")
       .getOrCreate()
-    val df: DataFrame = sqlContext.read.json("D:\\wordcount\\students.json")
+
+    val sc: SparkContext = session.sparkContext
+    sc.setLogLevel("WARN")
+
+    val df: DataFrame = session.read.json("D:\\wordcount\\students.json")
 
 
     df.show()

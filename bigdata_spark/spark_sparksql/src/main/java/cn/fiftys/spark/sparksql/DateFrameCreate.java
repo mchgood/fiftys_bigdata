@@ -11,10 +11,17 @@ import org.apache.spark.sql.SQLContext;
  */
 public class DateFrameCreate {
     public static void main(String[] args) {
-        SparkConf conf = new SparkConf().setAppName("DateFrameCreate").setMaster("local[2]");
+        SparkConf conf = new SparkConf()
+                .setAppName("DateFrameCreate")
+                .setMaster("local[2]");
         JavaSparkContext sc = new JavaSparkContext(conf);
+        //创建SQLContext
         SQLContext sqlContext = new SQLContext(sc);
-        Dataset<Row> df = sqlContext.read().json("D:\\wordcount\\students.json");
+
+        //从本地加载数据
+        Dataset<Row> df = sqlContext
+                .read()
+                .json("D:\\wordcount\\students.json");
         df.show();
 
 

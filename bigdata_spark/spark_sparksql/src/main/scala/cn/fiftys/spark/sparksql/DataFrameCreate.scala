@@ -11,7 +11,9 @@ object DataFrameCreate {
       .appName("DataFrameCreate")
       .getOrCreate()
 
-    val df: DataFrame = sparkSql.read.json("D:\\wordcount\\students.json")
+    val df: DataFrame = sparkSql
+      .read
+      .json("D:\\wordcount\\students.json")
 
     df.show()
   }

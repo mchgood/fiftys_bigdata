@@ -16,7 +16,9 @@ public class SparkOperatorFlatMap {
                 .setAppName("SparkOperatorFlatMap")
                 .setMaster("local");
 
+
         JavaSparkContext sc = new JavaSparkContext(conf);
+        sc.setLogLevel("WARN");
 
         //构造集合,将文本拆分为单词
         List<String> stringNumber = Arrays.asList(

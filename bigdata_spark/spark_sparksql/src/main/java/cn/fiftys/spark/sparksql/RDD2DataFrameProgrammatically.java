@@ -18,10 +18,10 @@ import java.util.List;
 /**
  * 以编程方式动态指定元数据，将RDD转换为DataFrame
  */
-public class RDDToDataFrameProgrammatically {
+public class RDD2DataFrameProgrammatically {
     public static void main(String[] args){
 
-        SparkConf conf = new SparkConf().setAppName("RDDToDataFrameProgrammatically").setMaster("local[2]");
+        SparkConf conf = new SparkConf().setAppName("RDD2DataFrameProgrammatically").setMaster("local[2]");
         JavaSparkContext sc = new JavaSparkContext(conf);
         sc.setLogLevel("WARN");
         SQLContext sqlContext = new SQLContext(sc);

@@ -11,9 +11,11 @@ import org.apache.spark.sql.SQLContext;
  */
 public class DataFrameOperation {
     public static void main(String[] args) {
-        SparkConf conf = new SparkConf().setAppName("DataFrameOperation").setMaster("local[2]");
+        SparkConf conf = new SparkConf().
+                setAppName("DataFrameOperation")
+                .setMaster("local[2]");
         JavaSparkContext sc = new JavaSparkContext(conf);
-        sc.setLogLevel("INFO");
+        sc.setLogLevel("WARN");
         SQLContext sqlContext = new SQLContext(sc);
 
         //创建出来的DataFream完全可以理解完一张表数据

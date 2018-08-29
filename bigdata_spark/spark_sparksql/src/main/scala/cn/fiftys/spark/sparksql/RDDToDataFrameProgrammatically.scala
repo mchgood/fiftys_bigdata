@@ -6,7 +6,7 @@ import org.apache.spark.sql.{DataFrame, Row, SparkSession}
 object RDDToDataFrameProgrammatically {
   def main(args: Array[String]): Unit = {
     val sqlContext = SparkSession.builder()
-      .appName("RDDToDataFrameProgrammatically")
+      .appName("RDD2DataFrameProgrammatically")
       .master("local")
       .getOrCreate()
 
